@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/styles.css">
+    <link rel="stylesheet" href="style/fontello.css">
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/logo.css">
+    <link rel="stylesheet" href="style/barramenu.css">
+   <link rel="stylesheet" href="style/menu.css">
+   <link rel="stylesheet" href="style/menuadopcion.css">
+   <link rel="stylesheet" href="style/slider.css">
+   <link rel="stylesheet" href="mediaqueries/stylemedia.css">
+    <title>Thefamilypets</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <img src="logo/Logotipo.png" alt="" class="logo">
+            <input type="checkbox" id="menu-bar">
+            <label class="icon-menu" for="menu-bar"></label>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">Iniciar sesión</a></li>
+                    <li><a href="#">Crear cuenta</a></li>
+                </ul>
+            </nav>
+            <nav class="menu1">
+                <ul>
+                    <li><a href="Inicio.html">Inicio</a></li>
+                    <li><a href="Quienessomos.html">Quienes somos</a></li>
+                    <li><a href="Adopción.html">Adopción</a></li>
+                    <li><a href="Donaciones.html">Donaciones</a></li>
+                    <li><a href="Fundaciones.html">Fundaciones</a></li>
+                    <li><a href="Mascotasperdidas.html">Mascotas perdidas</a></li>
+                    <li><a href="Contactanos.html">Contactanos</a></li>
+                    <li><a href="Ayuda.html">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>         
+    </header>   
+    
+    <main>
+      <section class="regresar">
+        <a href="Adopción.html">Regresar /<a href="Morgan.html">Siguiente</a></a>
+    </section>
+    <section class="mascotas1">
+      <div class="contenedor4">
+        <article>
+          <img src="img/imagen5.jpg" alt="" class="img2"></a>
+          <div class="container">
+          </div>
+      </article>
+        <article>
+          <img src="img/imagen5.jpg" alt="" class="img1"></a>
+          <div class="container">
+          </div>
+          
+      </article>
+      <article>
+          <div class="container">
+              <h2>Brunito</h2>
+              <p class="datos">Edad: 2 años</p>
+              <p class="datos">Raza : Labrador</p>
+              <p class="datos">Sexo: Macho</p>
+              <p class="datos">Tamaño: Mediano</p>
+              <p class="datos">Ubicación: Popayán - Cauca</p>
+              </div>
+             <h3>Conoce mas sobre BRUNITO</h3>
+             <p class="pagrafo1">
+            ¡Hola! Mi nombre es Brunito, y soy super tierno. Al comienzo <br> puedo ser un poco tímido, pero te aseguro que tengo mucho<br> amor para dar. Soy bastante tranquilo y busco un hogar que<br> me de mucho amor.
+             </p>  
+      </article>
+      </section>
+      <div class="contact_form">
+        <div class="formulario">      
+          <h1>Formulario de adopcion</h1>
+              <form action="submeter-formulario.php" method="post">
+                    <p>
+                      <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+
+                    <p>
+                      <label for="email" class="colocar_email">Apellido
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Apellido">
+                    </p>
+                
+                    <p>
+                      <label for="telefone" class="colocar_telefono">Teléfono
+                          <span class="obligatorio">*</span>
+                        </label>
+                      </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>    
+                  
+                    <p>
+                      <label for="website" class="colocar_website">Email
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="url" name="introducir_website" id="website" placeholder="Escribe tu email">
+                    </p>
+
+                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+
+                    <p class="aviso">
+                      <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>
+              </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p class="copy">The family pets &copy; 2020</p>
+            <div class="redes">
+            <a class="icon-facebook" href=""></a>
+            <a class="icon-twitter" href=""></a>
+            <a class="icon-instagram" href=""></a>
+
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

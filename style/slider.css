@@ -1,0 +1,229 @@
+@import url(Inicio.html);
+.container-all {
+    
+    border-radius: 6px;
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    overflow: hidden; 
+    
+}
+
+.slide {
+    display: flex;
+    transform: translate3d(0,0,0);
+    transition: all 600ms;
+    animation-name: autoplay;
+    animation-duration: 6.5s;
+    animation-duration: alternate;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+.item-slide {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 0;
+    max-width: 100%;
+   
+}
+.pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.pagination-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+    background: rgba(225,225,225,0.5);
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    transition: all 300ms;
+
+}
+
+.pagination-item:hover {
+    transform: scale(2);
+}
+.pagination-item img {
+    display: inline-block;
+    max-width: none;
+    height: 100%;
+    transform: scale(1);
+    opacity: 0;
+    transform: all 300ms;
+    
+}
+.slide img {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-top: 90px;
+    padding: 10px 10px;
+}
+.slide .container {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(5%) translateY(-90%);
+    color:#fff;
+}
+
+.slide h2 {
+    font-size: 25px;
+}
+.slide a {
+    display: inline-block;
+    background: #fff;
+    padding: 5px;
+    color: var(--color-primary);
+    text-decoration: none;
+    border-radius: 40px;
+    margin-top: 5px;
+    
+}
+.pagination-item:hover img {
+    
+    opacity: 1;
+    transform: scale(1);
+}
+input[id="1"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(0,0,0);
+}
+input[id="1"]:checked ~ .pagination .pagination-item[for="1"]{
+   background: #fff;
+}
+input[id="2"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 1),0,0);
+}
+input[id="2"]:checked ~ .pagination .pagination-item[for="2"]{
+   background: #fff;
+}
+input[id="3"]:checked ~ .slide{
+    animation: none;
+    transform: translate3d(calc(-100% * 2),0,0);
+}
+input[id="3"]:checked ~ .pagination .pagination-item[for="3"]{
+   background: #fff;
+}
+
+
+@keyframes autoplay {
+	33% {
+        transform: translate3d(calc(-100% * 0),0,0);
+    }
+
+	66% {
+        transform: translate3d(calc(-100% * 1),0,0);
+    }
+	100% {
+        transform: translate3d(calc(-100% * 2),0,0);
+    }
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+    .slide .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-10%) translateY(-120%);
+        color:#fff;
+    }
+    .slide h2 {
+        font-size: 20px;
+    }
+    .slide a {
+        display: inline-block;
+        background: #fff;
+        padding: var(--boton-padding);
+        color: var(--color-primary);
+        text-decoration: none;
+        border-radius: 40px;
+        padding: 5px;
+    }
+    .slide img {
+        width: 350px;
+        margin-top: 70px;
+    }
+
+    .pagination-item {
+        margin-top: -50px;
+
+    }
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+    .slide .container {
+        transform: translateX(5%) translateY(-200%);
+    }
+    .slide a {
+        display: inline-block;
+        background: #fff;
+        padding: var(--boton-padding);
+        color: var(--color-primary);
+        text-decoration: none;
+        border-radius: 40px;
+        padding: 5px;
+    }
+    .slide img {
+        width: 740px;
+        height: 400px;
+        margin-top: 70px;
+        padding: 10px 10px;
+    }
+
+    .pagination-item {
+        margin-top: -50px;
+
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    .slide .container {
+        transform: translateX(20%) translateY(-150%);
+    }
+    .slide a {
+        display: inline-block;
+        background: #fff;
+        padding: var(--boton-padding);
+        color: var(--color-primary);
+        text-decoration: none;
+        border-radius: 40px;
+        padding: 10px;
+    }
+    .slide h2 {
+        font-size: 28px;
+    }
+    .slide img {
+        width: 1010px;
+        height: 400px;
+        margin-top: 95px;
+        padding: 10px 10px;
+    }
+
+    .pagination-item {
+        margin-top: -50px;
+
+    }
+}
+

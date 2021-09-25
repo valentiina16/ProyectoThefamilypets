@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background:linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --color-primary: #06C2F3;
+    --color-secondary: #764ba2;
+    --boton-padding: 20px 40px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+.title {
+    margin-top: 10px;
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 25px;
+}
+section .title1 {
+    margin-top: 80px;
+    text-align: center;
+    color: var(--color-primary);
+}
+.pagrafo1 {
+    margin: 5px;
+    text-align: center;
+}
+.pagrafo2 {
+    margin: 5px;
+   
+}
+.pagrafo3 {
+    text-align: center;
+    margin-top: 5px;
+}
+ 
+.mascotas .contenedor3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mascotas article {
+    margin: 15px;
+}
+
+.mascotas p {
+    text-align: center;
+}
+
+.mascotas h4 {
+    text-align: center;
+}
+.mascotas .perro {
+    width: 300px;
+    height: 170px;
+    margin-top: 5px; 
+}
+.mascotas .gato {
+    width: 290px;
+    height: 180px;
+    margin-top: 5px; 
+}
+.mascotas .gato1 {
+    width: 290px;
+    height: 200px;
+    margin-top: 5px; 
+
+}
+.ayudar {
+    width: 290px;
+    height: 190px;
+    margin-top: 5px; 
+    border: 2px solid black;
+}
+
+.video {
+    margin: 5px 10px ;
+    width: 400px;
+    height: 300px
+}
+
+/*estilos footer*/
+footer {
+    background-color: var(--color-primary) ;
+    
+}
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+}
+.copy {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.redes {
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+}
+
+.redes a {
+    color: black;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px){
+    section .img {
+        width: 330px;
+    }
+    .video {
+        display: block;
+        width: 330px;
+        height: 300px
+    }
+    .regresar {
+        margin-top: 80px;
+    }
+
+}
+@media screen and (min-width:480px) and (max-width:768px) {
+    section .img {
+        width: 710px;
+    }
+
+    .video {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .regresar {
+        margin-top: 80px;
+        list-style: none;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    section .title1 {
+        margin-top: 110px;
+    }
+    section .img {
+        width: 985px;
+    }
+    section .mensaje {
+        transform: translateX(-95%) translateY(-100%);
+    }
+    
+    .video {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .regresar {
+        margin-top: 110px;
+        list-style: none;
+    }
+
+}
+
+
+
+
